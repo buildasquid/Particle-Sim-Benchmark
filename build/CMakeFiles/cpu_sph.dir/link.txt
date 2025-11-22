@@ -1,0 +1,1 @@
+/usr/bin/c++ -rdynamic CMakeFiles/cpu_sph.dir/src/cpu_sph.o -o cpu_sph  -lGL -lglut -lGLU 

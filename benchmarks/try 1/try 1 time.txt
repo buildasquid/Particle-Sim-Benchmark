@@ -1,0 +1,2 @@
+Total simulation time: 1410.52 seconds.
+Average step time: 0.141052 seconds.

@@ -1,7 +1,8 @@
-cmake_minimum_required(VERSION 3.16)
-project(ParticleSimBenchmark LANGUAGES CXX CUDA)
+find_package(OpenGL REQUIRED)
+find_package(GLUT REQUIRED)
 
-set(CMAKE_CXX_STANDARD 17)
-set(CMAKE_CUDA_STANDARD 17)
+include_directories(${OPENGL_INCLUDE_DIR} ${GLUT_INCLUDE_DIR} /usr/include/eigen3)
 
-add_executable(main src/main.cpp)
+add_executable(cpu_sph src/cpu_sph.cpp)
+
+target_link_libraries(cpu_sph ${OPENGL_gl_LIBRARY} ${GLUT_LIBRARY} ${OPENGL_glu_LIBRARY})
