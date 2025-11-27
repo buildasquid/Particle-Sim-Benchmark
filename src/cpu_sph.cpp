@@ -255,7 +255,7 @@ int main() {
     vector<int> THREAD_COUNTS = {1, 2, 4};                         // representative threading
     vector<int> CPU_CORES = {1, 4, 8};                             // typical CPU core setups for testing
     float MASS = 2.5f;
-    float GAS_CONST = 2000.f;                                       // total 486 simulations
+    float GAS_CONST = 2000.f;                                       // total 600+ simulations
 
 
     RunParameterSweepArrays(PARTICLE_COUNTS, NUM_STEPS, H_VALUES, DT_VALUES, VISC_VALUES, THREAD_COUNTS, CPU_CORES, MASS, GAS_CONST);
